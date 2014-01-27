@@ -12,7 +12,7 @@ $host = "localhost";
 $database = "banks";
 $con = new mysqli($host, $username, $password, $database);
 if($con->connect_errno){
-	echo "Failed to connect to Database:(" . $con->connect_errno . ")" . $con->connect_error;
+	echo "Failed to connect to Database Server:(" . $con->connect_errno . ")" . $con->connect_error;
 }
 $bankName = $_POST['bankName'];
 $abbr = $_POST['abbr'];
